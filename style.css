@@ -1,0 +1,53 @@
+/* making flexible */
+.animation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* animation balls position and others */
+.animation .ball div{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    margin: 150px 10px;
+    position: relative;
+}
+/* animation type and etcetra */
+.ball .blue{
+    animation: balls 2s ease 1s infinite;
+}
+.ball .red{
+    animation: balls 2s ease 1.2s infinite;
+}
+.ball .orange{
+    animation: balls 2s ease 1.4s infinite;
+}
+.ball .green{
+    animation: balls 2s ease 1.6s infinite;
+}
+/* animation name */
+@keyframes balls{
+    0%{
+        bottom: 0px;
+    }
+    50%{
+        bottom: 100px;
+    }
+    100%{
+        bottom: 0px;
+    }
+}
+/* the name and the color of the balls */
+.blue{
+    background-color: #4285F5;
+}
+.red{
+    background-color: #EA4436;
+}
+.orange{
+    background-color: #FBBD06;
+}
+.green{
+    background-color: #34A952;
+}
